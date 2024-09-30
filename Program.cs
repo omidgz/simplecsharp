@@ -26,6 +26,11 @@ namespace SimpleConsoleApp
         Console.Write("Name: " + person.Name);
         Console.WriteLine("\tAge: " + person.Age);
       }
+
+      const string connectionString = "Server=tcp:myfirstsql007.database.windows.net,1433;Initial Catalog=myazure;Persist Security Info=False;User ID=omid;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
+      const string cmd = "CREATE TABLE IF NOT EXISTS Persons (Name VARCHAR(255), Age INT);";
+
     }
   }
 }
